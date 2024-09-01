@@ -55,3 +55,33 @@ button {
   color: rgb(225, 236, 244);
   border: 2px solid rgb(225, 236, 244);
 }
+.male-button {
+  display: none;
+  width: 300px;
+  padding: 40px 20px;
+  background-color: rgb(225, 236, 244);
+  color: #418c9f;
+  border: none;
+  border-radius: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.female-button {
+  display: none;
+  width: 300px;
+  padding: 40px 20px;
+  background-color: rgb(244, 225, 235);
+  color: #da0488;
+  border: none;
+  border-radius: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.male-button:hover {
+  background-color: #1cb0e1;
+  color: rgb(225, 236, 244);
+}
+.female-button:hover {
+  background-color: #e11c95;
+  color: rgb(244, 225, 235);
+}
