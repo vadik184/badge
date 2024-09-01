@@ -41,6 +41,7 @@ button {
   margin: 0 auto;
 }
 .start-button {
+  display: block;
   width: 100%;
   padding: 20px;
   background-color: rgb(225, 236, 244);

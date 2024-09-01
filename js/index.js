@@ -7,7 +7,6 @@ const mainContainer = document.querySelector(".main-container");
 function openGender() {
   startContainer.style.display = "none";
   startButton.style.display = "none";
-
   maleButton.style.display = "block";
   femaleButton.style.display = "block";
   return maleButton, femaleButton;
