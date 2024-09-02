@@ -120,21 +120,6 @@ button {
   gap: 20px;
   padding-left: 20px;
 }
-.put-name-lable {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 10px;
-}
-.put-name-input {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
-  padding: 10px;
-  border-radius: 15px;
-  border: 1px solid #418c9f;
-}
 .gender-selection-input {
   position: absolute;
   width: 1px;
@@ -161,6 +146,27 @@ button {
   background-color: #418c9f;
   border: 1px solid white;
 }
+.put-name-lable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.put-name-input {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #418c9f;
+  outline: transparent;
+}
+
+.put-name-input:focus {
+  border-color: #18758c;
+}
+
 .job-selection-container {
   display: flex;
   justify-content: center;
@@ -172,11 +178,11 @@ button {
   border-radius: 15px;
   border: 1px solid #418c9f;
   background-color: rgb(255, 255, 255);
-
   color: #418c9f;
   font-size: 20px;
   font-weight: 600;
   appearance: none;
+  outline: transparent;
   -webkit-appearance: none; /* Safari */
   -moz-appearance: none; /* Firefox */
 }
