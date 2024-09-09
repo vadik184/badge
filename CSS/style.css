@@ -1,3 +1,7 @@
+:root {
+  --main-backgraund: #01b4e2;
+  --green-main: #96d552;
+}
 body {
   display: flex;
   justify-content: center;
@@ -25,7 +29,7 @@ button {
 .start-container {
   width: 300px;
   height: 400px;
-  background-color: rgb(225, 236, 244);
+  background-color: var(--main-backgraund);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +37,7 @@ button {
   border-radius: 30px;
   padding: 20px;
   gap: 20px;
-  color: #418c9f;
+  color: white;
 }
 .main-img {
   display: block;
@@ -44,15 +48,18 @@ button {
   display: block;
   width: 100%;
   padding: 20px;
-  background-color: rgb(225, 236, 244);
-  color: #418c9f;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--main-backgraund);
+  color: whitesmoke;
   border: none;
   border-radius: 30px;
   font-size: 28px;
   font-weight: 600;
 }
 .start-button:hover {
-  background-color: #418c9f;
+  background-color: var(--green-main);
+
   color: rgb(225, 236, 244);
   border: 2px solid rgb(225, 236, 244);
 }
@@ -98,8 +105,8 @@ button {
   width: 300px;
   padding: 20px;
   gap: 10px;
-  background-color: rgb(225, 236, 244);
-  color: #418c9f;
+  background-color: var(--main-backgraund);
+  color: whitesmoke;
   border: none;
   border-radius: 30px;
   font-size: 28px;
@@ -135,7 +142,7 @@ button {
 .gender-selection-span {
   width: 30px;
   height: 30px;
-  background-color: rgb(255, 255, 255);
+  background-color: whitesmoke;
   border: 1px solid #418c9f;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -143,7 +150,7 @@ button {
   align-items: center;
 }
 .gender-selection-input:checked + .gender-selection-lable span {
-  background-color: #418c9f;
+  background-color: var(--green-main);
   border: 1px solid white;
 }
 .put-name-lable {
@@ -177,8 +184,8 @@ button {
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #418c9f;
-  background-color: rgb(255, 255, 255);
-  color: #418c9f;
+  background-color: whitesmoke;
+  color: var(--main-backgraund);
   font-size: 20px;
   font-weight: 600;
   appearance: none;
@@ -192,7 +199,7 @@ button {
   align-items: center;
   width: 300px;
   padding: 20px;
-  background-color: rgb(225, 236, 244);
+  background-color: var(--main-backgraund);
   border-radius: 30px;
 }
 .upload-image-container {
@@ -202,8 +209,8 @@ button {
   width: 300px;
   padding: 20px;
   gap: 20px;
-  background-color: rgb(225, 236, 244);
-  color: #418c9f;
+  background-color: var(--main-backgraund);
+  color: whitesmoke;
   border: none;
   border-radius: 30px;
   font-size: 28px;
@@ -229,9 +236,9 @@ button {
   height: 100px;
   padding: 10px;
   border-radius: 15px;
-  border: 1px dashed #418c9f;
-  background-color: rgb(255, 255, 255);
-  color: #418c9f;
+  border: 1px dashed var(--green-main);
+  background-color: whitesmoke;
+  color: var(--main-backgraund);
   font-size: 24px;
   font-weight: 200;
   cursor: pointer;
@@ -242,15 +249,15 @@ button {
 .upload-image_btn-submit {
   display: block;
   padding: 20px;
-  background-color: rgb(255, 255, 255);
-  color: #418c9f;
-  border: 1px solid #418c9f;
+  background-color: whitesmoke;
+  color: var(--main-backgraund);
+  border: 1px solid whitesmoke;
   border-radius: 30px;
   font-size: 24px;
   font-weight: 600;
 }
 .upload-image_btn-submit:hover {
-  background-color: #418c9f;
-  color: rgb(225, 236, 244);
+  background-color: var(--green-main);
+  color: whitesmoke;
   border: 2px solid rgb(225, 236, 244);
 }
