@@ -37,7 +37,7 @@ button {
   border-radius: 30px;
   padding: 20px;
   gap: 20px;
-  color: white;
+  color: whitesmoke;
 }
 .main-img {
   display: block;
@@ -151,7 +151,7 @@ button {
 }
 .gender-selection-input:checked + .gender-selection-lable span {
   background-color: var(--green-main);
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
 }
 .put-name-lable {
   display: flex;
@@ -167,6 +167,10 @@ button {
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #418c9f;
+  background-color: whitesmoke;
+  color: var(--green-main);
+  font-size: 20px;
+  font-weight: 700;
   outline: transparent;
 }
 
@@ -185,7 +189,7 @@ button {
   border-radius: 15px;
   border: 1px solid #418c9f;
   background-color: whitesmoke;
-  color: var(--main-backgraund);
+  color: var(--green-main);
   font-size: 20px;
   font-weight: 600;
   appearance: none;
@@ -238,7 +242,7 @@ button {
   border-radius: 15px;
   border: 1px dashed var(--green-main);
   background-color: whitesmoke;
-  color: var(--main-backgraund);
+  color: var(--green-main);
   font-size: 24px;
   font-weight: 200;
   cursor: pointer;
