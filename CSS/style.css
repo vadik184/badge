@@ -1,5 +1,7 @@
 :root {
-  --main-backgraund: #01b4e2;
+  /* --main-backgraund: #01b4e2; */
+  --main-backgraund: #f0f0f3;
+  --border: #a8a8a8;
   --green-main: #96d552;
 }
 body {
@@ -13,6 +15,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  background-color: #e7ecf2;
 }
 button {
   cursor: pointer;
@@ -22,22 +25,24 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 20px;
   gap: 20px;
 }
 .start-container {
   width: 300px;
   height: 400px;
-  background-color: var(--main-backgraund);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
   padding: 20px;
   gap: 20px;
-  color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 9px 10px 8px -10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dfe5ed;
+  background-color: #fff;
+  color: #2c5777;
 }
 .main-img {
   display: block;
@@ -46,53 +51,29 @@ button {
 }
 .start-button {
   display: block;
+  background-color: #c9dfef;
+  color: #6899bb;
+  border-radius: 20px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
   width: 100%;
   padding: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: var(--main-backgraund);
-  color: whitesmoke;
-  border: none;
-  border-radius: 30px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .start-button:hover {
-  background-color: var(--green-main);
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+.start-button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+.start-button:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
 
-  color: rgb(225, 236, 244);
-  border: 2px solid rgb(225, 236, 244);
-}
-/* .male-button {
-  display: block;
-  width: 300px;
-  padding: 40px 20px;
-  background-color: rgb(225, 236, 244);
-  color: #418c9f;
-  border: none;
-  border-radius: 30px;
-  font-size: 28px;
-  font-weight: 600;
-}
-.female-button {
-  display: block;
-  width: 300px;
-  padding: 40px 20px;
-  background-color: rgb(244, 225, 235);
-  color: #da0488;
-  border: none;
-  border-radius: 30px;
-  font-size: 28px;
-  font-weight: 600;
-}
-.male-button:hover {
-  background-color: #1cb0e1;
-  color: rgb(225, 236, 244);
-}
-.female-button:hover {
-  background-color: #e11c95;
-  color: rgb(244, 225, 235);
-} */
 .next-page {
   width: 100%;
   text-decoration: none;
@@ -105,12 +86,13 @@ button {
   width: 300px;
   padding: 20px;
   gap: 10px;
-  background-color: var(--main-backgraund);
-  color: whitesmoke;
-  border: none;
-  border-radius: 30px;
+  border-radius: 20px;
+  box-shadow: 9px 10px 8px -10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dfe5ed;
+  background-color: #fff;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
+  color: #2c5777;
 }
 .gender-container {
   display: flex;
@@ -142,8 +124,11 @@ button {
 .gender-selection-span {
   width: 30px;
   height: 30px;
-  background-color: whitesmoke;
-  border: 1px solid #418c9f;
+  border: 1px solid #7aa7c7;
+  box-shadow: 0px 0px 28px -12px #52b6ff;
+  background-color: #f0f7fc;
+  box-shadow: rgba(12, 47, 89, 0.1) 1px 1px 3px 0 inset;
+  outline: none;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
@@ -165,17 +150,21 @@ button {
   margin: 0 auto;
   width: 90%;
   padding: 10px;
-  border-radius: 15px;
-  border: 1px solid #418c9f;
-  background-color: whitesmoke;
-  color: var(--green-main);
+  border: 1px solid #7aa7c7;
+  box-shadow: 0px 0px 28px -12px #52b6ff;
+  border-radius: 10px;
+  background-color: #f0f7fc;
+  box-shadow: rgba(12, 47, 89, 0.1) 1px 1px 3px 0 inset;
+  outline: none;
+  color: #183b54;
+
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   outline: transparent;
 }
 
 .put-name-input:focus {
-  border-color: #18758c;
+  border-color: grey;
 }
 
 .job-selection-container {
@@ -186,12 +175,15 @@ button {
 .job-select-choice {
   width: 100%;
   padding: 10px;
-  border-radius: 15px;
-  border: 1px solid #418c9f;
-  background-color: whitesmoke;
-  color: var(--green-main);
+  border: 1px solid #7aa7c7;
+  box-shadow: 0px 0px 28px -12px #52b6ff;
+  border-radius: 10px;
+  background-color: #f0f7fc;
+  box-shadow: rgba(12, 47, 89, 0.1) 1px 1px 3px 0 inset;
+  outline: none;
+  color: #183b54;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   appearance: none;
   outline: transparent;
   -webkit-appearance: none; /* Safari */
@@ -203,8 +195,10 @@ button {
   align-items: center;
   width: 300px;
   padding: 20px;
-  background-color: var(--main-backgraund);
-  border-radius: 30px;
+  border-radius: 20px;
+  box-shadow: 9px 10px 8px -10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dfe5ed;
+  background-color: #fff;
 }
 .upload-image-container {
   display: flex;
@@ -213,10 +207,10 @@ button {
   width: 300px;
   padding: 20px;
   gap: 20px;
-  background-color: var(--main-backgraund);
-  color: whitesmoke;
-  border: none;
-  border-radius: 30px;
+  border-radius: 20px;
+  box-shadow: 9px 10px 8px -10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dfe5ed;
+  background-color: #fff;
   font-size: 28px;
   font-weight: 600;
 }
@@ -239,9 +233,9 @@ button {
   height: 100px;
   padding: 10px;
   border-radius: 15px;
-  border: 1px dashed var(--green-main);
-  background-color: whitesmoke;
-  color: var(--main-backgraund);
+  border: 1px dashed #7aa7c7;
+  background-color: #f0f7fc;
+  color: var(--border);
   font-size: 24px;
   font-weight: 200;
   cursor: pointer;
@@ -252,15 +246,24 @@ button {
 .upload-image_btn-submit {
   display: block;
   padding: 20px;
-  background-color: whitesmoke;
-  color: var(--green-main);
-  border: 1px solid whitesmoke;
-  border-radius: 30px;
+  background-color: #e1ecf4;
+  color: #39739d;
+  border-radius: 10px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .upload-image_btn-submit:hover {
-  background-color: var(--green-main);
-  color: whitesmoke;
-  border: 2px solid rgb(225, 236, 244);
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+.upload-image_btn-submit:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+.upload-image_btn-submit:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
 }
