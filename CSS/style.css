@@ -242,7 +242,7 @@ button {
   border-radius: 15px;
   border: 1px dashed var(--green-main);
   background-color: whitesmoke;
-  color: var(--green-main);
+  color: var(--main-backgraund);
   font-size: 24px;
   font-weight: 200;
   cursor: pointer;
@@ -254,7 +254,7 @@ button {
   display: block;
   padding: 20px;
   background-color: whitesmoke;
-  color: var(--main-backgraund);
+  color: var(--green-main);
   border: 1px solid whitesmoke;
   border-radius: 30px;
   font-size: 24px;
