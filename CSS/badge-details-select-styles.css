@@ -6,7 +6,7 @@
   --background-input: #f1f5f8;
   --background-input-focus: #77b0fc;
   --border-inpyt-focus: #dfeeff;
-  --button: #77b0fc
+  --button: #1a72e4;
   --button-border: #68aeff;
 }
 body {
@@ -71,7 +71,7 @@ fieldset {
   border-radius: 8px;
   box-shadow: 9px 10px 8px -10px rgba(0, 0, 0, 0.1);
   border: 1px solid #77b0fc;
-  background-color: #68aeff;
+  background-color: var(--button);
   color: #fff;
   font-size: 18px;
 }
