@@ -36,8 +36,16 @@ fieldset {
   justify-content: center;
   align-items: center;
 }
+.gender-field {
+  display: flex;
+}
 .input {
   width: 75%;
+  border-radius: 5px;
+  border: 1px solid #dfe5ed;
+  background-color: #f1f5f8;
+  color: #2c5777;
+  padding: 5px;
 }
 .submit-btn {
   width: 50%;
