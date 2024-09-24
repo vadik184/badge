@@ -15,21 +15,38 @@
   <body>
     <form action="" class="main-form">
       <fieldset class="gender-field">
-        <div class="container">
-          <label for="male"
+        <div class="container radio-container">
+          <label class="gender-label" for="male"
             >хлопець
             <input
+              class="gender-radio"
               type="radio"
               name="gender-choise"
               id="male"
               value="male"
-              checked
-          /></label>
-          <label for="female"
+              checked />
+            <span class="gender-selection-span">
+              <svg width="20" height="20">
+                <use
+                  href="../img/symbol-defs.svg#icon-checkmark"
+                ></use></svg></span
+          ></label>
+          <div class="divider"></div>
+          <label class="gender-label" for="female"
             >дівчина
 
-            <input type="radio" name="gender-choise" id="female" value="female"
-          /></label>
+            <input
+              class="gender-radio"
+              type="radio"
+              name="gender-choise"
+              id="female"
+              value="female" />
+            <span class="gender-selection-span">
+              <svg width="20" height="20">
+                <use
+                  href="../img/symbol-defs.svg#icon-checkmark"
+                ></use></svg></span
+          ></label>
         </div>
       </fieldset>
       <fieldset class="choise-name-field">
@@ -60,13 +77,17 @@
       </fieldset>
       <fieldset>
         <div class="container">
-          <label for="image-input-id">завантажити фото</label>
+          <label class="image-label" for="image-input-id"
+            >завантажити фото<span>(за бажанням)</span></label
+          >
           <input
             class="image-input input"
             type="file"
             id="image-input-id"
             accept="image/*"
           />
+          <!-- <div class="photo-preview"></div> -->
+          <button class="upload-image-button">завантажити</button>
         </div>
       </fieldset>
       <input class="submit-btn" type="submit" value="сформувати бейдж" />
