@@ -1,0 +1,68 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: darkmagenta;
+  background: linear-gradient(rgb(251, 13, 128), darkmagenta, rgb(38, 3, 83));
+  color: #f5f6f7;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+h1,
+p {
+  margin: 20px auto 5px;
+  text-align: center;
+}
+h1 {
+  max-width: 500px;
+}
+p {
+  max-width: 600px;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+fieldset {
+  border: none;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  margin: 5px 0 15px 0;
+}
+
+a {
+  color: #ffe4fb;
+  font-size: 14px;
+}
+label[for="terms"] {
+  font-size: 14px;
+  display: block;
+  margin: 15px auto 10px;
+  text-align: center;
+}
+input[type="submit"] {
+  display: block;
+  width: unset;
+  padding: 10px 35px;
+  border-radius: 10px;
+  margin: 15px auto 0;
+  font-size: 18px;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  margin: 5px;
+  font-size: 14px;
+}
+.multi-choise label {
+  display: block;
+}

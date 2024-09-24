@@ -13,6 +13,53 @@
     <title>Бейджі</title>
   </head>
   <body>
+    <form action="" class="main-form">
+      <fieldset class="gender-field">
+        <label for="male"
+          ><input
+            checked
+            type="radio"
+            name="gender-choise"
+            id="male"
+            checked
+          />хлопець</label
+        >
+        <label for="female"
+          ><input type="radio" name="gender-choise" id="female" />дівчина</label
+        >
+      </fieldset>
+      <fieldset class="choise-name-field">
+        <legend>введіть ім'я</legend>
+        <label for="input-name"
+          ><input type="text" name="input-name" id="input-name" required
+        /></label>
+      </fieldset>
+      <fieldset class="position-field">
+        <legend>веберіть посаду</legend>
+        <label for="select-position">
+          <select name="select-position" id="select-position">
+            <option value="">(вибрати)</option>
+            <option value="1">директор магазину</option>
+            <option value="2">товарознавець</option>
+            <option value="3">касир</option>
+            <option value="4">експерт</option>
+            <option value="5">стажер</option>
+          </select></label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>завантажити фото</legend>
+        <label for="image-input-id">
+          <input
+            class="image-input"
+            type="file"
+            id="image-input-id"
+            accept="image/*"
+          />
+        </label>
+      </fieldset>
+      <input type="submit" value="сформувати бейдж" />
+    </form>
     <script src="./js/index.js"></script>
   </body>
 </html>

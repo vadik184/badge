@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Educational Forum 2024</title>
+    <link rel="stylesheet" href="/CSS/fcc-project-html-css.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration for the Educational Forum 2024</h1>
+    <p id="description">
+      Please fill out the form to register for our forum. Your contact details
+      are required to confirm your participation.
+    </p>
+    <p></p>
+    <form id="survey-form">
+      <label id="name-label" for="name"
+        >Full name:<input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="enter you name"
+          required
+      /></label>
+      <label id="email-label" for="email"
+        >Email<input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="enter your email address"
+          required
+      /></label>
+      <label id="number-label" for="age"
+        >Age<input
+          id="number"
+          name="age"
+          type="number"
+          min="16"
+          max="120"
+          placeholder="enter your age"
+          required
+      /></label>
+      <label for="dropdown">Your occupation:</label>
+      <select name="dropdown" id="dropdown">
+        <option value="">Select your occupation</option>
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+        <option value="researcher">Researcher</option>
+        <option value="entrepreneur">Entrepreneur</option>
+        <option value="other">Other</option>
+      </select>
+      <fieldset>
+        <legend>Select your gender:</legend>
+        <label for="male-account"
+          ><input
+            class="inline"
+            id="male-account"
+            type="radio"
+            name="gender"
+            checked
+          />
+          Male</label
+        >
+        <label for="female-account"
+          ><input
+            class="inline"
+            id="female-account"
+            type="radio"
+            name="gender"
+          />
+          Female</label
+        >
+      </fieldset>
+      <label for="comments"
+        >Additional comments or requests:
+        <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+      </label>
+
+      <fieldset class="multi-choise">
+        <legend>
+          Please select any additional materials or services you would like to
+          receive during the event:
+        </legend>
+        <label for="materials1"></label>
+        <input
+          class="inline"
+          type="checkbox"
+          id="materials1"
+          name="materials"
+          value="brochures"
+        />Conference materials (e.g., brochures, slides)
+        <label for="materials2"></label>
+        <input
+          class="inline"
+          type="checkbox"
+          id="materials2"
+          name="materials"
+          value="recorded_sessions"
+        />Access to recorded sessions
+        <label for="materials3"></label>
+        <input
+          class="inline"
+          type="checkbox"
+          id="materials3"
+          name="materials"
+          value="networking"
+        />Networking opportunities
+        <label for="materials4"></label>
+        <input
+          class="inline"
+          type="checkbox"
+          id="materials4"
+          name="materials"
+          value="certificate"
+        />Certificate of participation
+      </fieldset>
+      <label for="terms">
+        <input class="inline" type="checkbox" id="terms" required />
+        I agree to the
+        <a href="" target="_blank">Terms of Service</a> and
+        <a href="" target="_blank">Privacy Policy</a>.
+      </label>
+      <label for="submit">
+        <input id="submit" type="submit" value="Submit"
+      /></label>
+    </form>
+  </body>
+</html>
