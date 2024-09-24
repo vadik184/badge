@@ -1,8 +1,13 @@
 :root {
-  --main-backgraund: #01b4e2;
-  --main-backgraund: #f0f0f3;
-  --border: #a8a8a8;
+  --main-backgraund: #dfe5ed;
+  --main-backgraund2: #f0f0f3;
+  --border: #dfe5ed;
   --green-main: #96d552;
+  --background-input: #f1f5f8;
+  --background-input-focus: #77b0fc;
+  --border-inpyt-focus: #dfeeff;
+  --button: #77b0fc
+  --button-border: #68aeff;
 }
 body {
   width: 100%;
@@ -12,7 +17,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 20px;
   background-color: #e7ecf2;
 }
 button {
@@ -24,8 +29,8 @@ button {
 }
 fieldset {
   display: flex;
+  /* min-height: 100px; */
   flex-direction: column;
-  min-height: 50px;
   padding: 10px;
   margin-top: 15px;
   border-radius: 15px;
@@ -36,8 +41,14 @@ fieldset {
   justify-content: center;
   align-items: center;
 }
-.gender-field {
+.container {
   display: flex;
+  width: 100%;
+  min-height: 90px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 .input {
   width: 75%;
@@ -47,8 +58,12 @@ fieldset {
   color: #2c5777;
   padding: 5px;
 }
+.input:focus {
+  background-color: #dfeeff;
+  border: 1px solid #77b0fc;
+}
+
 .submit-btn {
-  width: 50%;
   display: block;
   margin: 15px auto;
   padding: 10px;
@@ -57,4 +72,5 @@ fieldset {
   border: 1px solid #77b0fc;
   background-color: #68aeff;
   color: #fff;
+  font-size: 18px;
 }

@@ -15,51 +15,59 @@
   <body>
     <form action="" class="main-form">
       <fieldset class="gender-field">
-        <label for="male"
-          >хлопець
-          <input
-            type="radio"
-            name="gender-choise"
-            id="male"
-            value="male"
-            checked
-        /></label>
-        <label for="female"
-          >дівчина
+        <div class="container">
+          <label for="male"
+            >хлопець
+            <input
+              type="radio"
+              name="gender-choise"
+              id="male"
+              value="male"
+              checked
+          /></label>
+          <label for="female"
+            >дівчина
 
-          <input type="radio" name="gender-choise" id="female" value="female"
-        /></label>
+            <input type="radio" name="gender-choise" id="female" value="female"
+          /></label>
+        </div>
       </fieldset>
       <fieldset class="choise-name-field">
-        <label for="input-name">введіть ім'я</label
-        ><input
-          class="input"
-          id="input-name"
-          type="text"
-          name="input-name"
-          id="input-name"
-          required
-        />
+        <div class="container">
+          <label for="input-name">введіть ім'я</label
+          ><input
+            class="input"
+            id="input-name"
+            type="text"
+            name="input-name"
+            id="input-name"
+            required
+          />
+        </div>
       </fieldset>
       <fieldset class="position-field">
-        <label for="select-position">веберіть посаду</label>
-        <select class="input" name="select-position" id="select-position">
-          <option value="">(вибрати)</option>
-          <option value="1">директор магазину</option>
-          <option value="2">товарознавець</option>
-          <option value="3">касир</option>
-          <option value="4">експерт</option>
-          <option value="5">стажер</option>
-        </select>
+        <div class="container">
+          <label for="select-position">веберіть посаду</label>
+          <select class="input" name="select-position" id="select-position">
+            <option value="">(вибрати)</option>
+            <option value="1">директор магазину</option>
+            <option value="2">товарознавець</option>
+            <option value="3">касир</option>
+            <option value="4">експерт</option>
+            <option value="5">стажер</option>
+          </select>
+        </div>
       </fieldset>
       <fieldset>
-        <label for="image-input-id">завантажити фото</label>
-        <input
-          class="image-input input"
-          type="file"
-          id="image-input-id"
-          accept="image/*"
-        />
+        <div class="container">
+          <label for="image-input-id">завантажити фото</label>
+          <input
+            class="image-input input"
+            type="file"
+            id="image-input-id"
+            accept="image/*"
+          />
+        </div>
       </fieldset>
       <input class="submit-btn" type="submit" value="сформувати бейдж" />
     </form>
