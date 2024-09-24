@@ -99,9 +99,10 @@ fieldset {
   border-radius: 5px;
   border: 1px solid #dfe5ed;
   background-color: #f1f5f8;
-  color: #2c5777;
+  color: #4d7b9e;
   padding: 5px;
   outline: transparent;
+  font-size: 18px;
 }
 .input:focus {
   background-color: #dfeeff;
