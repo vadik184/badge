@@ -78,12 +78,14 @@ p {
 }
 .one-bage {
   display: flex;
-  gap: 3mm;
+  gap: 1.5mm;
 }
 .background-black {
   width: 55.5mm;
   height: 79.5mm;
   background-color: black;
+    border: 1px solid white;
+
 }
 .img-position {
   display: flex;
@@ -95,19 +97,21 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 1.5mm;
 }
 h2 {
+font-size: 18px;
   margin: 0;
   font-weight: 800;
 }
 h3 {
+font-size: 14px;
   margin: 0;
   font-weight: 400;
 }
 img {
-  width: 55mm;
-  height: 55mm;
+  width: 53mm;
+  height: 53mm;
 }</style>
   </head>
   <body>
