@@ -23,7 +23,8 @@
               type="radio"
               name="gender-choise"
               id="male"
-              value="male" />
+              value="male"
+              checked />
             <span class="gender-selection-span">
               <svg width="20" height="20">
                 <use
@@ -66,15 +67,17 @@
           <label for="select-position">веберіть посаду</label>
           <select class="input" name="select-position" id="select-position">
             <option value="">(вибрати)</option>
-            <option value="1">директор магазину</option>
-            <option value="2">товарознавець</option>
-            <option value="3">касир</option>
-            <option value="4">експерт</option>
-            <option value="5">стажер</option>
+            <option value="директор магазину">директор магазину</option>
+            <option value="товарознавець">товарознавець</option>
+            <option value="касир">касир</option>
+            <option value="експерт">експерт</option>
+            <option value="стажер">стажер</option>
           </select>
         </div>
       </fieldset>
-      <fieldset>
+      <!--**************** розділ завантаження аватарки****************-->
+      <!-- <fieldset>
+        
         <div class="container">
           <label class="image-label" for="image-input-id"
             >завантажити фото<span>(за бажанням)</span></label
@@ -85,12 +88,13 @@
             id="image-input-id"
             accept="image/*"
           />
-          <!-- <div class="photo-preview"></div> -->
+           <div class="photo-preview"></div> 
           <button class="upload-image-button">завантажити</button>
         </div>
-      </fieldset>
+      </fieldset> -->
       <input class="submit-btn" type="submit" value="сформувати бейдж" />
     </form>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/bage.js"></script>
   </body>
 </html>

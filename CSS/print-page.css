@@ -1,0 +1,67 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 210mm;
+  height: 297mm;
+  margin: 0;
+  padding: 20mm;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.one-bage {
+  display: flex;
+  gap: 3mm;
+  background-color: black;
+}
+.background-blak {
+  width: 55.5mm;
+  height: 79.5mm;
+  background-color: black;
+}
+.img-position {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.text-position {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5mm;
+}
+h2 {
+  margin: 0;
+  font-weight: 800;
+}
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+img {
+  width: 55mm;
+  height: 55mm;
+}
