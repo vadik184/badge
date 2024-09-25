@@ -41,7 +41,7 @@ document
     @media print {
   @page {
     size: A4;
-    margin: 20mm;
+    margin: 0;
   }
     .background-black {
     -webkit-print-color-adjust: exact; /* Для Chrome та Safari */
@@ -81,7 +81,7 @@ p {
   gap: 1.5mm;
 }
 .background-black {
-  width: 56,5mm;
+  width: 56.5mm;
   height: 80.5mm;
   background-color: black;
     border: 1px solid white;
