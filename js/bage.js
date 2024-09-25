@@ -81,8 +81,8 @@ p {
   gap: 1.5mm;
 }
 .background-black {
-  width: 55.5mm;
-  height: 79.5mm;
+  width: 56,5mm;
+  height: 80.5mm;
   background-color: black;
     border: 1px solid white;
 
@@ -100,12 +100,12 @@ p {
   gap: 1.5mm;
 }
 h2 {
-font-size: 18px;
+font-size: 20px;
   margin: 0;
   font-weight: 800;
 }
 h3 {
-font-size: 14px;
+font-size: 16px;
   margin: 0;
   font-weight: 400;
 }
