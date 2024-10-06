@@ -3,6 +3,9 @@
     size: A4;
     margin: 0;
   }
+  * {
+    box-sizing: border-box;
+  }
   .background-black {
     -webkit-print-color-adjust: exact; /* Для Chrome та Safari */
     print-color-adjust: exact; /* Для Firefox та інших браузерів */
@@ -38,7 +41,7 @@ p {
 }
 .one-bage {
   display: flex;
-  gap: 1.5mm;
+  gap: 0.5mm;
 }
 .background-black {
   width: 55.5mm;
@@ -69,6 +72,25 @@ h3 {
   font-weight: 400;
 }
 img {
-  width: 53mm;
-  height: 53mm;
+  width: 51mm;
+  height: 51mm;
+  margin-top: 10px;
+}
+.avatarWithBody {
+  width: 43mm;
+  height: 43mm;
+  margin-top: 9mm;
+  margin-bottom: 2mm;
+  position: relative;
+}
+span {
+  height: 10px;
+  width: 45mm;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
+  position: absolute;
+  margin-bottom: 2mm;
+}
+.many {
+  display: flex;
+  gap: 20px;
 }

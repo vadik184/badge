@@ -7,6 +7,7 @@ document
     const gender = document.querySelector(
       'input[name="gender-choise"]:checked'
     ).value;
+
     const name = document.getElementById("input-name").value;
     const position = document.getElementById("select-position").value;
 
@@ -18,11 +19,43 @@ document
     };
 
     console.log("Збережені дані у змінній formData:", formData);
-
+    function genderChoise() {
+      if (gender === "male") {
+        return `<img
+              class="avatarWithBody"
+              src="../img/male2.png"
+              alt="avatar"
+            /><span></span>`;
+      } else {
+        return `<img src = "../img/female.png" alt="avatar" />`;
+      }
+    }
     // Створюємо нову сторінку формату A4
     const newWindow = window.open("", "_blank", "width=842,height=1190"); // A4 в пікселях при 72dpi
 
     // HTML-контент для нової сторінки
+    const bageForPrint = `<div class="main-container">
+      <div class="one-bage">
+        <div class="background-black">
+          <div class="img-position">
+            ${genderChoise()}
+          </div>
+          <div class="text-position">
+            <h2>${name}</h2>
+            <h3>${position}</h3>
+          </div>
+        </div>
+        <div class="background-black">
+          <div class="img-position">
+            ${genderChoise()}
+          </div>
+          <div class="text-position">
+            <h2>${name}</h2>
+            <h3>${position}</h3>
+          </div>
+        </div>
+      </div>
+    </div>`;
     const pageContent = `
     <!DOCTYPE html>
 <html lang="en">
@@ -39,28 +72,8 @@ document
     <title>Бейджі</title>
       </head>
   <body>
-    <div class="main-container">
-      <div class="one-bage">
-        <div class="background-black">
-          <div class="img-position">
-            <img src="../img/female.png" alt="avatar" />
-          </div>
-          <div class="text-position">
-            <h2>${name}</h2>
-            <h3>${position}</h3>
-          </div>
-        </div>
-        <div class="background-black">
-          <div class="img-position">
-            <img src="../img/female.png" alt="avatar" />
-          </div>
-          <div class="text-position">
-            <h2>${name}</h2>
-            <h3>${position}</h3>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="many">
+    ${bageForPrint}</div>
   </body>
 </html>
   `;
