@@ -9,68 +9,79 @@
       href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/new-oct.css" />
     <title>Бейджі</title>
   </head>
   <body>
-    <div class="main-container">
-      <form class="gender-selection section">
-        <div class="gender-container">
-          <input
-            class="gender-selection-input"
-            type="checkbox"
-            name="male"
-            id="male"
-          /><label for="male" class="gender-selection-lable"
-            >хлопець <span class="gender-selection-span"></span
-          ></label>
+    <div class="container">
+      <form>
+        <div class="gender">
+          <div class="gender-container">
+            <input
+              class="gender-selection-input"
+              type="checkbox"
+              name="male"
+              id="male"
+            /><label for="male" class="gender-selection-lable"
+              >хлопець <span class="gender-selection-span"></span
+            ></label>
+          </div>
+          <div class="gender-container">
+            <input
+              class="gender-selection-input"
+              type="checkbox"
+              name="female"
+              id="female"
+              value="true"
+              required
+            />
+            <label for="female" class="gender-selection-lable"
+              >дівчина <span class="gender-selection-span"></span
+            ></label>
+          </div>
         </div>
-        <div class="gender-container">
-          <input
-            class="gender-selection-input"
-            type="checkbox"
-            name="female"
-            id="female"
-            value="true"
-            required
-          />
-          <label for="female" class="gender-selection-lable"
-            >дівчина <span class="gender-selection-span"></span
-          ></label>
-        </div>
-      </form>
-      <div class="put-name section">
-        <label for="put-name-input-id" class="put-name-lable"
-          >введіть ім'я</label
-        >
-        <input class="put-name-input" type="text" id="put-name-inpyt-id" />
-      </div>
-      <form class="job-selection-container section">
-        <label for="job-selection-lable">вибір посади</label>
-        <select class="job-select-choice" name="job-select" id="job-select">
-          <option class="vubir" value="s0" selected>вибрати</option>
-          <option value="s1">директор магазину</option>
-          <option value="s2">товарознавець</option>
-          <option value="s3">експерт</option>
-          <option value="s4">касир</option>
-          <option value="s5">стажер</option>
-        </select>
-      </form>
-      <div class="upload-image-container section">
-        <input
-          class="upload-image-input"
-          type="file"
-          id="upload-image-input-id"
-          accept="image/*"
-        /><label for="upload-image-input-id" class="upload-image-label">
-          Завантажити власне зображення
-          <span class="upload-span">(за бажанням)</span>
-        </label>
 
-        <button class="upload-image_btn-submit" type="submit">
-          завантажити
-        </button>
-      </div>
+        <div class="put-name section">
+          <label for="put-name-input-id" class="put-name-lable"
+            >введіть ім'я</label
+          >
+          <input
+            class="put-name-input put"
+            type="text"
+            id="put-name-inpyt-id"
+          />
+        </div>
+        <div class="section">
+          <label for="job-selection-lable">вибір посади</label>
+          <select
+            class="job-select-choice put"
+            name="job-select"
+            id="job-select"
+          >
+            <option class="vubir" value="s0" selected>вибрати</option>
+            <option value="s1">директор магазину</option>
+            <option value="s2">товарознавець</option>
+            <option value="s3">експерт</option>
+            <option value="s4">касир</option>
+            <option value="s5">стажер</option>
+          </select>
+        </div>
+        <div class="upload-image-container section">
+          <input
+            class="upload-image-input"
+            type="file"
+            id="upload-image-input-id"
+            accept="image/*"
+          /><label for="upload-image-input-id" class="upload-image-label">
+            Завантажити власне зображення
+            <span class="upload-span">(за бажанням)</span>
+          </label>
+
+          <button class="upload-image_btn-submit" type="submit">
+            завантажити
+          </button>
+        </div>
+      </form>
     </div>
     <script src="./js/index.js"></script>
   </body>

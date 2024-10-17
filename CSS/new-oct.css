@@ -1,0 +1,111 @@
+body {
+  background: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 18px;
+}
+.container {
+  width: 300px;
+  text-align: center;
+  color: #333;
+}
+.gender {
+  border-radius: 15px 15px 10px 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+}
+.section {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-top: 2px dashed #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.put {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+option:hover {
+  background-color: #256e17;
+}
+.upload-image-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px 10px 15px 15px;
+  border-top: 2px dashed #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+
+.upload-image-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.upload-image-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px dashed #a9a9a9;
+  background-color: #f8f8f8;
+  color: #b0b0b0;
+  cursor: pointer;
+}
+.upload-span {
+}
+.upload-image_btn-submit {
+  display: block;
+  padding: 20px;
+  background-color: #abe2b8;
+  color: #256e17;
+  border-radius: 10px;
+  border: 1px solid #256e17;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 400;
+}
+.upload-image_btn-submit:hover {
+  background-color: #256e17;
+  color: #abe2b8;
+  box-shadow: rgba(0, 0, 0, 0.7) 1px 1px 5px 0 inset;
+}
+.upload-image_btn-submit:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+.upload-image_btn-submit:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
