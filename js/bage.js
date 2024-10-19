@@ -2,7 +2,6 @@ document
   .querySelector(".main-form")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Зупиняємо стандартну поведінку форми
-
     // Отримуємо дані з форми
     const gender = document.querySelector(
       'input[name="gender-choise"]:checked'
@@ -85,3 +84,44 @@ document
     // Можна автоматично відкрити діалогове вікно для друку
     newWindow.print();
   });
+
+const nameText = document.querySelector(".input-name");
+const maketNameText = document.querySelector(".maket-name");
+const positionText = document.querySelector(".select-position");
+const maketPositionText = document.querySelector(".maket-position");
+
+console.log(nameText.value, positionText.value);
+const getName = (event) => {
+  return (maketNameText.textContent = event.target.value);
+};
+nameText.addEventListener("input", getName);
+document
+  .getElementById("select-position")
+  .addEventListener("change", function () {
+    let selectedOption = this.options[this.selectedIndex].text;
+    document.querySelector(".maket-position").innerText = selectedOption;
+  });
+document
+  .getElementById("select-position")
+  .addEventListener("change", function () {
+    let selectedOption = this.options[this.selectedIndex].text;
+    document.querySelector(".maket-position").innerText = selectedOption;
+  });
+// ------------------- додаєм картинку
+const maket = document.querySelector(".maket2");
+console.log(maket);
+
+const createImg = document.createElement("img");
+createImg.src = "../img/male2.png";
+maket.prepend(createImg);
+const form = document.getElementById("main-form");
+console.log(form);
+form.addEventListener("change", (event) => {
+  if (event.target.value === "male") {
+    createImg.src = "../img/male2.png"; // Замініть на реальний шлях до картинки для male
+  } else if (event.target.value === "female") {
+    createImg.src = "../img/female.png"; // Замініть на реальний шлях до картинки для female
+  }
+
+  maket.prepend(createImg);
+});

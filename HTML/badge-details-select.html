@@ -13,70 +13,76 @@
     <title>Бейджі</title>
   </head>
   <body>
-    <form action="" class="main-form">
-      <fieldset class="gender-field">
-        <div class="container radio-container">
-          <label class="gender-label" for="male"
-            >хлопець
-            <input
-              class="gender-radio"
-              type="radio"
-              name="gender-choise"
-              id="male"
-              value="male"
-              checked />
-            <span class="gender-selection-span">
-              <svg width="20" height="20">
-                <use
-                  href="../img/symbol-defs.svg#icon-checkmark"
-                ></use></svg></span
-          ></label>
-          <div class="divider"></div>
-          <label class="gender-label" for="female"
-            >дівчина
-
-            <input
-              class="gender-radio"
-              type="radio"
-              name="gender-choise"
-              id="female"
-              value="female" />
-            <span class="gender-selection-span">
-              <svg width="20" height="20">
-                <use
-                  href="../img/symbol-defs.svg#icon-checkmark"
-                ></use></svg></span
-          ></label>
-        </div>
-      </fieldset>
-      <fieldset class="choise-name-field">
-        <div class="container">
-          <label for="input-name">введи ім'я</label
-          ><input
-            class="input"
-            id="input-name"
-            type="text"
-            name="input-name"
-            id="input-name"
-            required
-          />
-        </div>
-      </fieldset>
-      <fieldset class="position-field">
-        <div class="container">
-          <label for="select-position">вибери посаду</label>
-          <select class="input" name="select-position" id="select-position">
-            <option value="">(вибрати)</option>
-            <option value="директор магазину">директор магазину</option>
-            <option value="товарознавець">товарознавець</option>
-            <option value="касир">касир</option>
-            <option value="експерт">експерт</option>
-            <option value="стажер">стажер</option>
-          </select>
-        </div>
-      </fieldset>
-      <!--**************** розділ завантаження аватарки****************-->
-      <!-- <fieldset>
+    <header></header>
+    <div class="all-div">
+      <div class="choise-div">
+        <form action="" class="main-form" id="main-form">
+          <fieldset class="gender-field">
+            <div class="container radio-container">
+              <label class="gender-label" for="male"
+                >хлопець
+                <input
+                  class="gender-radio"
+                  type="radio"
+                  name="gender-choise"
+                  id="male"
+                  value="male"
+                  checked />
+                <span class="gender-selection-span">
+                  <svg width="20" height="20">
+                    <use
+                      href="../img/symbol-defs.svg#icon-checkmark"
+                    ></use></svg></span
+              ></label>
+              <div class="divider"></div>
+              <label class="gender-label" for="female"
+                >дівчина
+                <input
+                  class="gender-radio"
+                  type="radio"
+                  name="gender-choise"
+                  id="female"
+                  value="female" />
+                <span class="gender-selection-span">
+                  <svg width="20" height="20">
+                    <use
+                      href="../img/symbol-defs.svg#icon-checkmark"
+                    ></use></svg></span
+              ></label>
+            </div>
+          </fieldset>
+          <fieldset class="choise-name-field">
+            <div class="container">
+              <label for="input-name">введи ім'я</label
+              ><input
+                class="input input-name"
+                id="input-name"
+                type="text"
+                name="input-name"
+                id="input-name"
+                required
+              />
+            </div>
+          </fieldset>
+          <fieldset class="position-field">
+            <div class="container">
+              <label for="select-position">вибери посаду</label>
+              <select
+                class="input select-position"
+                name="select-position"
+                id="select-position"
+              >
+                <option value="">(вибрати)</option>
+                <option value="директор магазину">директор магазину</option>
+                <option value="товарознавець">товарознавець</option>
+                <option value="касир">касир</option>
+                <option value="експерт">експерт</option>
+                <option value="стажер">стажер</option>
+              </select>
+            </div>
+          </fieldset>
+          <!--**************** розділ завантаження аватарки****************-->
+          <!-- <fieldset>
         
         <div class="container">
           <label class="image-label" for="image-input-id"
@@ -92,8 +98,22 @@
           <button class="upload-image-button">завантажити</button>
         </div>
       </fieldset> -->
-      <input class="submit-btn" type="submit" value="сформувати бейдж" />
-    </form>
+          <input class="submit-btn" type="submit" value="сформувати бейдж" />
+        </form>
+      </div>
+      <div class="preview">
+        <div class="bage-img">
+          <img src="../img/bage-macet.png" alt="macet" />
+          <div class="maket">
+            <div class="maket2">
+              <h2 class="maket-name"></h2>
+              <h3 class="maket-position"></h3>
+              <div class="gradient"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="../js/index.js"></script>
     <script src="../js/bage.js"></script>
   </body>
