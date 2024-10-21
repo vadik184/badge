@@ -164,10 +164,10 @@ fieldset {
 .preview {
   display: none;
 }
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1000px) {
   .main-form {
+    max-width: 219px;
+    margin: 15px auto;
   }
   .all-div {
     width: 100%;
@@ -175,37 +175,126 @@ fieldset {
     display: flex;
   }
   .choise-div {
-    max-width: 400px;
+    max-width: 219px;
     height: 100%;
     border-right: 2px solid #cfd2d6;
-    padding: 0 43px 0 57px;
+    padding: 0 47px 0 57px;
   }
+  .gender-label {
+   width: 65%;
+}
+.input {
+  width: 90%;
+  padding: 5px;
+ font-size: 16px;
+}
+.select-position{
+  width: 95%;
+}
+  .gender-selection-span {
+    width: 20px;
+    height: 20px;
+  }
+  #icon{
+    height: 15px;
+  }
+}
+
   .preview {
     display: block;
     margin: 0 auto;
   }
   .bage-img {
     position: relative;
-    width: 796px;
-    padding-top: 85px;
-    padding-left: 57px;
+    width: 620px;
+    padding-top: 121px;
+    padding-left: 36px;
   }
   .preview img {
     width: 100%;
   }
   .maket {
     position: absolute;
-    width: 229px;
-    height: 327px;
+    width: 179px;
+    height: 255px;
     background-color: black;
-    top: 153px;
-    left: 419px;
+    top: 174px;
+    left: 318px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     padding: 0;
     color: #fff;
+  }
+  .maket img {
+    width: 145px;
+    height: 145px;
+    padding-top: 22px;
+  }
+  .maket-name {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+  .maket-position {
+    font-size: 12px;
+    margin: 0;
+  }
+  .maket2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+  }
+  .gradient {
+    width: 157px;
+    height: 23px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
+    position: absolute;
+    top: 144px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-form {
+  }
+  /* .all-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  } */
+  .choise-div {
+    max-width: 400px;
+    /* height: 100%;
+    border-right: 2px solid #cfd2d6; */
+    padding: 0 43px 0 57px;
+  }
+  /* .preview {
+    display: block;
+    margin: 0 auto;
+  } */
+  .bage-img {
+    position: relative;
+    width: 796px;
+    padding-top: 85px;
+    padding-left: 57px;
+  }
+  /* .preview img {
+    width: 100%;
+  } */
+  .maket {
+    position: absolute;
+    width: 229px;
+    height: 327px;
+    /* background-color: black; */
+    top: 153px;
+    left: 419px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    color: #fff; */
   }
   .maket img {
     width: 185px;
@@ -214,27 +303,26 @@ fieldset {
   }
   .maket-name {
     font-size: 22px;
-    margin: 0;
+    /* margin: 0; */
     margin-top: 20px;
     margin-bottom: 8px;
   }
   .maket-position {
     font-size: 14px;
-    margin: 0;
+    /* margin: 0; */
   }
-  .maket2 {
+  /* .maket2 {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     padding: 0;
     position: relative;
-  }
+  } */
   .gradient {
     width: 202px;
     height: 29px;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
-    position: absolute;
+    /* background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
+    position: absolute; */
     top: 184px;
   }
 }
