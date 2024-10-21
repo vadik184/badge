@@ -20,6 +20,7 @@ body {
   font-style: normal;
   font-size: 20px;
   background-color: #e7ecf2;
+  box-sizing: border-box;
 }
 header {
   width: 100%;
@@ -164,6 +165,7 @@ fieldset {
 .preview {
   display: none;
 }
+
 @media screen and (min-width: 1000px) {
   .main-form {
     max-width: 219px;
@@ -181,29 +183,28 @@ fieldset {
     padding: 0 47px 0 57px;
   }
   .gender-label {
-   width: 65%;
-}
-.input {
-  width: 90%;
-  padding: 5px;
- font-size: 16px;
-}
-.select-position{
-  width: 95%;
-}
+    width: 65%;
+  }
+  .input {
+    width: 90%;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .select-position {
+    width: 95%;
+  }
   .gender-selection-span {
     width: 20px;
     height: 20px;
   }
-  #icon{
+  #icon {
     height: 15px;
   }
-}
-
   .preview {
     display: block;
     margin: 0 auto;
   }
+
   .bage-img {
     position: relative;
     width: 620px;
