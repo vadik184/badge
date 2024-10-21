@@ -37,7 +37,6 @@ button {
 }
 fieldset {
   display: flex;
-  /* min-height: 100px; */
   flex-direction: column;
   padding: 10px;
   margin-top: 15px;
@@ -184,6 +183,8 @@ fieldset {
   }
   .gender-label {
     width: 65%;
+    display: flex;
+    align-items: center;
   }
   .input {
     width: 90%;
@@ -257,45 +258,51 @@ fieldset {
     top: 144px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .main-form {
-  }
-  /* .all-div {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-  } */
+@media screen and (min-width: 1366px) {
   .choise-div {
     max-width: 400px;
-    /* height: 100%;
-    border-right: 2px solid #cfd2d6; */
     padding: 0 43px 0 57px;
   }
-  /* .preview {
-    display: block;
-    margin: 0 auto;
-  } */
+  .main-form {
+    max-width: 300px;
+    margin: 15px auto;
+  }
+  #icon {
+    height: 20px;
+  }
+  .gender-label {
+    width: 50%;
+  }
+  .gender-selection-span {
+    width: 25px;
+    height: 25px;
+  }
+  .select-position {
+    width: 100%;
+  }
+  .input {
+    width: 75%;
+    border-radius: 5px;
+    border: 1px solid #dfe5ed;
+    background-color: #f1f5f8;
+    color: #4d7b9e;
+    padding: 5px;
+    outline: transparent;
+    font-size: 18px;
+  }
   .bage-img {
     position: relative;
     width: 796px;
     padding-top: 85px;
     padding-left: 57px;
   }
-  /* .preview img {
-    width: 100%;
-  } */
+
   .maket {
     position: absolute;
     width: 229px;
     height: 327px;
-    /* background-color: black; */
     top: 153px;
     left: 419px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    color: #fff; */
   }
   .maket img {
     width: 185px;
@@ -304,26 +311,16 @@ fieldset {
   }
   .maket-name {
     font-size: 22px;
-    /* margin: 0; */
     margin-top: 20px;
     margin-bottom: 8px;
   }
   .maket-position {
     font-size: 14px;
-    /* margin: 0; */
   }
-  /* .maket2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    position: relative;
-  } */
+
   .gradient {
     width: 202px;
     height: 29px;
-    /* background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
-    position: absolute; */
     top: 184px;
   }
 }
