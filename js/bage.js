@@ -9,7 +9,18 @@ document
 
     const name = document.getElementById("input-name").value;
     const position = document.getElementById("select-position").value;
+    const maleColor = document.querySelector(
+      'input[name="male-color"]:checked'
+    ).value;
+    console.log(maleColor);
 
+    function malePic() {
+      if (maleColor === "brunette") {
+        return "../img/male2.png";
+      } else {
+        return "../img/male-blond-2.png";
+      }
+    }
     // Створюємо об'єкт з даними
     const formData = {
       gender: gender,
@@ -22,7 +33,7 @@ document
       if (gender === "male") {
         return `<img
               class="avatarWithBody"
-              src="../img/male2.png"
+              src=${malePic()}
               alt="avatar"
             /><span></span>`;
       } else {
@@ -116,12 +127,40 @@ createImg.src = "../img/male2.png";
 maket.prepend(createImg);
 const form = document.getElementById("main-form");
 console.log(form);
+
 form.addEventListener("change", (event) => {
-  if (event.target.value === "male") {
-    createImg.src = "../img/male2.png"; // Замініть на реальний шлях до картинки для male
-  } else if (event.target.value === "female") {
+  const malePicture = document.querySelector(".male-pic");
+  const divider = document.querySelector(".divider-color");
+  const gender = document.querySelector(
+    'input[name="gender-choise"]:checked'
+  ).value;
+  console.log(gender);
+  if (gender === "male") {
+    malePicture.style.display = "flex";
+    divider.style.display = "flex";
+  } else {
+    malePicture.style.display = "none";
+    divider.style.display = "none";
+  }
+  const maleColor = document.querySelector(
+    'input[name="male-color"]:checked'
+  ).value;
+  console.log(maleColor);
+
+  function malePic() {
+    if (maleColor === "brunette") {
+      return "../img/male2.png";
+    } else {
+      return "../img/male-blond-2.png";
+    }
+  }
+  if (gender === "male") {
+    createImg.src = malePic();
+  } else if (gender === "female") {
     createImg.src = "../img/female.png"; // Замініть на реальний шлях до картинки для female
   }
-
+  console.log(event.target.value);
   maket.prepend(createImg);
 });
+//--------------------- вибір кольору волосся
+const genderfild = document.querySelector(".gender-field");

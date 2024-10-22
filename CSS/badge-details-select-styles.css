@@ -100,6 +100,41 @@ fieldset {
   width: 90%;
   border-bottom: 1px solid var(--border);
 }
+
+/* -------------------- вибір кольору ----------------------- */
+.male-pic {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+  justify-content: center;
+}
+.male-selection-span {
+  width: 50px;
+  height: 25px;
+  border: 1px solid #7aa7c7;
+  box-shadow: 0px 0px 28px -12px #52b6ff;
+  /*  */
+  outline: none;
+  border-radius: 5px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.brunette {
+  background-color: #563417;
+}
+.blond {
+  background-color: #daa75e;
+}
+.gender-radio:checked + .male-selection-span {
+  border: 3px solid white;
+  box-shadow: rgba(12, 47, 89, 0.8) 1px 1px 8px 0;
+}
+.divider-color {
+  margin-top: 10px;
+}
 .input {
   width: 75%;
   border-radius: 5px;
@@ -267,16 +302,16 @@ fieldset {
     max-width: 300px;
     margin: 15px auto;
   }
-  #icon {
+  /* #icon {
     height: 20px;
-  }
+  } */
   .gender-label {
     width: 50%;
   }
-  .gender-selection-span {
+  /* .gender-selection-span {
     width: 25px;
     height: 25px;
-  }
+  } */
   .select-position {
     width: 100%;
   }
