@@ -233,7 +233,7 @@ fieldset {
     width: 20px;
     height: 20px;
   }
-  .gender-label svg {
+  .choise-icon {
     height: 15px;
   }
   .preview {
@@ -306,10 +306,7 @@ fieldset {
   .gender-label {
     width: 50%;
   }
-  /* .gender-selection-span {
-    width: 25px;
-    height: 25px;
-  } */
+
   .select-position {
     width: 100%;
   }
