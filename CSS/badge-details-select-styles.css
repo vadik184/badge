@@ -27,6 +27,17 @@ header {
   height: 37px;
   background-color: #6d6d6d;
 }
+header a {
+  cursor: pointer;
+  height: 100%;
+  text-decoration: none;
+  padding: 0;
+  color: white;
+  display: flex;
+  margin-left: 63px;
+  align-items: center;
+  font-size: 14px;
+}
 button {
   cursor: pointer;
 }
