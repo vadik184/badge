@@ -249,24 +249,39 @@ fieldset {
   }
   .preview {
     display: block;
-    margin: 0 auto;
+    left: 0;
   }
 
   .bage-img {
     position: relative;
     width: 620px;
-    padding-top: 121px;
+    padding-top: 111px;
     padding-left: 36px;
   }
-  .preview img {
+  .preview .img {
     width: 100%;
+  }
+  .logo {
+    position: absolute;
+    height: 14px;
+    width: 60px;
+    top: 169px;
+    left: 323px;
+  }
+  .allo {
+    position: absolute;
+    color: rgb(218, 217, 217);
+    left: 330px;
+    top: 421px;
+    margin: 0;
+    font-size: 10px;
   }
   .maket {
     position: absolute;
     width: 179px;
     height: 255px;
     background-color: black;
-    top: 174px;
+    top: 164px;
     left: 318px;
     display: flex;
     flex-direction: column;
@@ -337,7 +352,18 @@ fieldset {
     padding-top: 85px;
     padding-left: 57px;
   }
-
+  .allo {
+    left: 431px;
+    top: 484px;
+    font-size: 12px;
+  }
+  .logo {
+    position: absolute;
+    height: 18px;
+    width: 78px;
+    top: 158px;
+    left: 424px;
+  }
   .maket {
     position: absolute;
     width: 229px;

@@ -163,4 +163,3 @@ form.addEventListener("change", (event) => {
   maket.prepend(createImg);
 });
 //--------------------- вибір кольору волосся
-const genderfild = document.querySelector(".gender-field");
