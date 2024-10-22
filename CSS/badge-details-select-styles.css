@@ -233,7 +233,7 @@ fieldset {
     width: 20px;
     height: 20px;
   }
-  #icon {
+  .gender-label svg {
     height: 15px;
   }
   .preview {
@@ -302,9 +302,7 @@ fieldset {
     max-width: 300px;
     margin: 15px auto;
   }
-  /* #icon {
-    height: 20px;
-  } */
+
   .gender-label {
     width: 50%;
   }
