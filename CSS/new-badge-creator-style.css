@@ -54,7 +54,7 @@ fieldset {
   height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 3px;
+  margin-top: 30px;
   position: relative;
 }
 .avatar-preview {
