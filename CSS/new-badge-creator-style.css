@@ -154,9 +154,6 @@ select option[disabled] {
   display: none;
 }
 
-select option.placeholder {
-  color: red;
-}
 /*-----------------  вибір власного зображення  ------------------*/
 .image-input {
   width: 0.1px;
@@ -254,6 +251,19 @@ select option.placeholder {
   transform: rotate(47deg);
   left: 106px;
   top: 406px;
+}
+.red-box {
+  position: absolute;
+  width: 487px;
+  height: 429px;
+  background-color: #ff0092;
+  opacity: 66%;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(50px);
+  transform: rotate(107deg);
+  left: 490px;
+  top: 56px;
 }
 
 /*  --------------------------  для планшета  -------------------  */
