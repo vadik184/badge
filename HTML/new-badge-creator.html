@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/new-badge-creator-style.css" />
+    <title>Бейджі</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">НА ГОЛОВНУ</a>
+    </header>
+    <div class="all-div">
+      <div class="choise-div">
+        <form action="" id="main-form">
+          <div class="main-form">
+            <fieldset class="gender-field">
+              <div class="container radio-container">
+                <label class="gender-label" for="male">
+                  <input
+                    class="gender-radio"
+                    type="radio"
+                    name="gender-choise"
+                    id="male"
+                    value="male" />
+                  <span class="gender-selection-span">
+                    <img
+                      class="avatar-preview male"
+                      src="../img/male-avatar.png"
+                      alt="male-icon" /></span
+                ></label>
+                <label class="gender-label" for="female">
+                  <input
+                    class="gender-radio"
+                    type="radio"
+                    name="gender-choise"
+                    id="female"
+                    value="female" />
+                  <span class="gender-selection-span">
+                    <img
+                      class="avatar-preview female"
+                      src="../img/female-avatar.png"
+                      alt="female-icon" /></span
+                ></label>
+              </div>
+            </fieldset>
+            <div class="divider"></div>
+            <fieldset class="choise-name-field">
+              <div class="container">
+                <label for="input-name">ВВЕДИ ІМ'Я</label
+                ><input
+                  class="input input-name"
+                  id="input-name"
+                  type="text"
+                  name="input-name"
+                  id="input-name"
+                  required
+                />
+              </div>
+            </fieldset>
+            <div class="divider"></div>
+            <fieldset class="position-field">
+              <div class="container">
+                <label for="select-position">ВИБЕРИ ПОСАДУ</label>
+                <select
+                  class="input select-position"
+                  name="select-position"
+                  id="select-position"
+                >
+                  <option value="" disabled selected class="placeholder">
+                    (вибрати)
+                  </option>
+                  <option value="директор магазину">директор магазину</option>
+                  <option value="товарознавець">товарознавець</option>
+                  <option value="касир">касир</option>
+                  <option value="експерт">експерт</option>
+                  <option value="стажер">стажер</option>
+                </select>
+              </div>
+            </fieldset>
+            <div class="divider"></div>
+            <fieldset>
+              <div class="container">
+                <label class="image-label" for="image-input-id"
+                  >ДОДАТИ ВЛАСНЕ ЗОБРАЖЕННЯ</label
+                >
+                <input
+                  class="image-input"
+                  type="file"
+                  id="image-input-id"
+                  accept="image/*"
+                />
+                <div class="photo-preview"></div>
+                <button class="upload-image-button">завантажити</button>
+              </div>
+            </fieldset>
+          </div>
+          <input class="submit-btn" type="submit" value="СФОРМУВАТИ БЕЙДЖ" />
+        </form>
+      </div>
+      <div class="preview">
+        <div class="bage-img">
+          <img class="img" src="../img/bage-macet.png" alt="macet" />
+          <div class="maket">
+            <div class="maket2">
+              <h2 class="maket-name"></h2>
+              <h3 class="maket-position"></h3>
+              <div class="gradient"></div>
+            </div>
+          </div>
+          <p class="allo">allo.ua</p>
+          <img
+            class="logo"
+            src="../img/logo-allo2Монтажна область 1.png"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div class="yellow-box"></div>
+      <div class="purpul-box"></div>
+      <div class="blue-box"></div>
+    </div>
+    <div class="violet-box"></div>
+    <script src="../js/index.js"></script>
+    <script src="../js/bage.js"></script>
+  </body>
+</html>
