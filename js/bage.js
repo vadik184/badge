@@ -1,8 +1,7 @@
 document
   .querySelector(".main-form")
   .addEventListener("submit", function (event) {
-    event.preventDefault(); // Зупиняємо стандартну поведінку форми
-    // Отримуємо дані з форми
+    event.preventDefault();
     const gender = document.querySelector(
       'input[name="gender-choise"]:checked'
     ).value;
@@ -33,7 +32,7 @@ document
       if (gender === "male") {
         return `<img
               class="avatarWithBody"
-              src=${malePic()}
+              src="../img/male2.png"
               alt="avatar"
             /><span></span>`;
       } else {
@@ -155,7 +154,7 @@ form.addEventListener("change", (event) => {
     }
   }
   if (gender === "male") {
-    createImg.src = malePic();
+    createImg.src = "../img/male2.png";
   } else if (gender === "female") {
     createImg.src = "../img/female.png"; // Замініть на реальний шлях до картинки для female
   }
