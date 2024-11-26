@@ -26,6 +26,7 @@ body {
   background-color: #ffffff;
   color: #707070;
   box-sizing: border-box;
+  overflow: hidden;
 }
 header {
   width: 100%;
@@ -79,7 +80,7 @@ fieldset {
   flex-direction: column;
   width: 308px;
   background-color: #ffffff;
-  border: none;
+  border: 1px solid #70707043;
   border-radius: 30px;
   padding: 25px;
   justify-content: center;
@@ -213,15 +214,18 @@ select option[disabled] {
     0 3px 6px rgba(0, 0, 0, 0.16);
 }
 /*  ------------------------  фон  ---------------------  */
+.all-color-box {
+  opacity: 30%;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(50px);
+}
 .yellow-box {
   position: absolute;
   width: 457px;
   height: 421px;
   background-color: yellow;
-  opacity: 66%;
-  border-radius: 50%;
-  z-index: -1;
-  filter: blur(50px);
+
   transform: rotate(47deg);
   left: 25px;
   top: -104px;
@@ -231,10 +235,6 @@ select option[disabled] {
   width: 400px;
   height: 439px;
   background-color: #ef00ff;
-  opacity: 56%;
-  border-radius: 50%;
-  z-index: -1;
-  filter: blur(50px);
   transform: rotate(10deg);
   left: -135px;
   top: 193px;
@@ -244,10 +244,6 @@ select option[disabled] {
   width: 373px;
   height: 354px;
   background-color: #0099ff;
-  opacity: 66%;
-  border-radius: 50%;
-  z-index: -1;
-  filter: blur(50px);
   transform: rotate(47deg);
   left: 106px;
   top: 406px;
@@ -257,10 +253,6 @@ select option[disabled] {
   width: 487px;
   height: 429px;
   background-color: #ff0092;
-  opacity: 66%;
-  border-radius: 50%;
-  z-index: -1;
-  filter: blur(50px);
   transform: rotate(107deg);
   left: 490px;
   top: 56px;
@@ -270,13 +262,14 @@ select option[disabled] {
 @media screen and (min-width: 900px) {
   .violet-box {
     position: absolute;
-    /* display: none; */
     width: 499px;
-    /* height: 1000px; */
     height: 920px;
     z-index: -1;
     right: 0;
     top: 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ef00ff 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ee00ff44 100%);
+  }
+  .preview {
+    display: flex;
   }
 }
