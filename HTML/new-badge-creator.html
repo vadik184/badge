@@ -15,122 +15,124 @@
     <title>Бейджі</title>
   </head>
   <body>
-    <header>
-      <a href="../index.html">НА ГОЛОВНУ</a>
-    </header>
-    <div class="all-div">
-      <div class="choise-div">
-        <form action="" id="main-form">
-          <div class="main-form">
-            <fieldset class="gender-field">
-              <div class="container radio-container">
-                <label class="gender-label" for="male">
+    <div class="osnova">
+      <header>
+        <a href="../index.html">НА ГОЛОВНУ</a>
+      </header>
+      <div class="all-div">
+        <div class="choise-div">
+          <form action="" id="main-form">
+            <div class="main-form">
+              <fieldset class="gender-field">
+                <div class="container radio-container">
+                  <label class="gender-label" for="male">
+                    <input
+                      class="gender-radio"
+                      type="radio"
+                      name="gender-choise"
+                      id="male"
+                      value="male" />
+                    <span class="gender-selection-span">
+                      <img
+                        class="avatar-preview male"
+                        src="../img/male-avatar.png"
+                        alt="male-icon" /></span
+                  ></label>
+                  <label class="gender-label" for="female">
+                    <input
+                      class="gender-radio"
+                      type="radio"
+                      name="gender-choise"
+                      id="female"
+                      value="female" />
+                    <span class="gender-selection-span">
+                      <img
+                        class="avatar-preview female"
+                        src="../img/female-avatar.png"
+                        alt="female-icon" /></span
+                  ></label>
+                </div>
+              </fieldset>
+              <div class="divider"></div>
+              <fieldset class="choise-name-field">
+                <div class="container">
+                  <label for="input-name">ВВЕДИ ІМ'Я</label
+                  ><input
+                    class="input input-name"
+                    id="input-name"
+                    type="text"
+                    name="input-name"
+                    id="input-name"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <div class="divider"></div>
+              <fieldset class="position-field">
+                <div class="container">
+                  <label for="select-position">ВИБЕРИ ПОСАДУ</label>
+                  <select
+                    class="input select-position"
+                    name="select-position"
+                    id="select-position"
+                  >
+                    <option value="" disabled selected class="placeholder">
+                      (вибрати)
+                    </option>
+                    <option value="директор магазину">директор магазину</option>
+                    <option value="товарознавець">товарознавець</option>
+                    <option value="касир">касир</option>
+                    <option value="експерт">експерт</option>
+                    <option value="стажер">стажер</option>
+                  </select>
+                </div>
+              </fieldset>
+              <div class="divider"></div>
+              <fieldset>
+                <div class="container">
+                  <label class="image-label" for="image-input-id"
+                    >ДОДАТИ ВЛАСНЕ ЗОБРАЖЕННЯ</label
+                  >
                   <input
-                    class="gender-radio"
-                    type="radio"
-                    name="gender-choise"
-                    id="male"
-                    value="male" />
-                  <span class="gender-selection-span">
-                    <img
-                      class="avatar-preview male"
-                      src="../img/male-avatar.png"
-                      alt="male-icon" /></span
-                ></label>
-                <label class="gender-label" for="female">
-                  <input
-                    class="gender-radio"
-                    type="radio"
-                    name="gender-choise"
-                    id="female"
-                    value="female" />
-                  <span class="gender-selection-span">
-                    <img
-                      class="avatar-preview female"
-                      src="../img/female-avatar.png"
-                      alt="female-icon" /></span
-                ></label>
-              </div>
-            </fieldset>
-            <div class="divider"></div>
-            <fieldset class="choise-name-field">
-              <div class="container">
-                <label for="input-name">ВВЕДИ ІМ'Я</label
-                ><input
-                  class="input input-name"
-                  id="input-name"
-                  type="text"
-                  name="input-name"
-                  id="input-name"
-                  required
-                />
-              </div>
-            </fieldset>
-            <div class="divider"></div>
-            <fieldset class="position-field">
-              <div class="container">
-                <label for="select-position">ВИБЕРИ ПОСАДУ</label>
-                <select
-                  class="input select-position"
-                  name="select-position"
-                  id="select-position"
-                >
-                  <option value="" disabled selected class="placeholder">
-                    (вибрати)
-                  </option>
-                  <option value="директор магазину">директор магазину</option>
-                  <option value="товарознавець">товарознавець</option>
-                  <option value="касир">касир</option>
-                  <option value="експерт">експерт</option>
-                  <option value="стажер">стажер</option>
-                </select>
-              </div>
-            </fieldset>
-            <div class="divider"></div>
-            <fieldset>
-              <div class="container">
-                <label class="image-label" for="image-input-id"
-                  >ДОДАТИ ВЛАСНЕ ЗОБРАЖЕННЯ</label
-                >
-                <input
-                  class="image-input"
-                  type="file"
-                  id="image-input-id"
-                  accept="image/*"
-                />
-                <div class="photo-preview"></div>
-                <button class="upload-image-button">завантажити</button>
-              </div>
-            </fieldset>
-          </div>
-          <input class="submit-btn" type="submit" value="СФОРМУВАТИ БЕЙДЖ" />
-        </form>
-      </div>
-      <div class="preview">
-        <div class="bage-img">
-          <img class="img" src="../img/bage-macet.png" alt="macet" />
-          <div class="maket">
-            <div class="maket2">
-              <div class="previwe-photo"></div>
-              <h2 class="maket-name"></h2>
-              <h3 class="maket-position"></h3>
-              <div class="gradient"></div>
+                    class="image-input"
+                    type="file"
+                    id="image-input-id"
+                    accept="image/*"
+                  />
+                  <div class="photo-preview"></div>
+                  <button class="upload-image-button">завантажити</button>
+                </div>
+              </fieldset>
             </div>
-          </div>
-          <p class="allo">allo.ua</p>
-          <img
-            class="logo"
-            src="../img/logo-allo2Монтажна область 1.png"
-            alt="logo"
-          />
+            <input class="submit-btn" type="submit" value="СФОРМУВАТИ БЕЙДЖ" />
+          </form>
         </div>
+        <div class="preview">
+          <div class="bage-img">
+            <img class="img" src="../img/bage-macet.png" alt="macet" />
+            <div class="maket">
+              <div class="maket2">
+                <div class="previwe-photo"></div>
+                <h2 class="maket-name"></h2>
+                <h3 class="maket-position"></h3>
+                <div class="gradient"></div>
+              </div>
+            </div>
+            <p class="allo">allo.ua</p>
+            <img
+              class="logo"
+              src="../img/logo-allo2Монтажна область 1.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+        <div class="yellow-box all-color-box"></div>
+        <div class="purpul-box all-color-box"></div>
+        <div class="blue-box all-color-box"></div>
+        <div class="red-box all-color-box"></div>
       </div>
-      <div class="yellow-box all-color-box"></div>
-      <div class="purpul-box all-color-box"></div>
-      <div class="blue-box all-color-box"></div>
-      <div class="red-box all-color-box"></div>
+      <div class="violet-box"></div>
     </div>
-    <div class="violet-box"></div>
     <script src="../js/index.js"></script>
     <script src="../js/badge-new.js"></script>
   </body>

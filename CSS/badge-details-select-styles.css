@@ -10,10 +10,15 @@
   --button2: #569fff;
   --button-border: #68aeff;
 }
+html,
 body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
+  margin: 0; /* Прибрати відступи за замовчуванням */
+  padding: 0; /* Прибрати внутрішні відступи */
+  width: 100vw; /* Ширина рівна ширині вікна перегляду */
+  height: 100vh; /* Висота рівна висоті вікна перегляду */
+  overflow: hidden; /* Приховати вміст, що виходить за межі */
+}
+body {
   font-family: "Geologica", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
