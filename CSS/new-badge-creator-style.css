@@ -221,6 +221,26 @@ select option[disabled] {
   justify-content: center;
   align-items: center;
 }
+.upload-photo {
+  position: relative;
+  display: flex;
+}
+.delete-img-btn {
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(251, 150, 150);
+  top: 0;
+  right: 0;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+}
 .uploaded-photo {
   width: 60px;
   height: 60px;
@@ -364,7 +384,7 @@ select option[disabled] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
+    background-color: black;
     position: relative;
   }
   .previwe-photo {
@@ -380,11 +400,13 @@ select option[disabled] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     line-height: 25px;
+    color: #ffffff;
   }
   .maket-position {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    color: #ffffff;
   }
   .gradient {
     position: absolute;
@@ -397,6 +419,10 @@ select option[disabled] {
     height: 35px;
     top: 174px;
     filter: blur(5px);
-    opacity: 0%;
+    /* z-index: 40; */
+  }
+  .maket-img {
+    width: 169px;
+    height: 169px;
   }
 }
