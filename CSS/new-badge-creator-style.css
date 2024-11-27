@@ -200,6 +200,7 @@ select option[disabled] {
   padding-top: 12px;
   padding-bottom: 12px;
   margin-top: 10px;
+  display: none;
 }
 .upload-image-button:hover {
   box-shadow: 3px 0px 16px rgba(0, 17, 255, 0.3),
@@ -211,6 +212,20 @@ select option[disabled] {
   background-color: #5abdff;
   box-shadow: 2px 2px 1px rgba(255, 255, 255, 1),
     inset 2px 2px 6px rgba(4, 87, 142, 0.5);
+}
+
+.photo-preview {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploaded-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
 }
 /* ----------  submit button  ----------------*/
 .submit-btn {
@@ -304,13 +319,13 @@ select option[disabled] {
     position: relative;
     width: 820px;
     height: 613px;
-    background-color: #ffffff;
-    border: 1px solid #70707043;
+    /* background-color: #ffffff;
+    border: 1px solid #70707043; */
     border-radius: 30px;
     margin-left: 64px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.17);
+    /* box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.17); */
   }
   .bage-img {
     position: relative;
