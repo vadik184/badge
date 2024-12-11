@@ -15,6 +15,10 @@ body {
   color: #707070;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 header {
   width: 100%;
   height: 37px;
@@ -109,8 +113,27 @@ header a {
   border: 1px solid #70707043;
   border-radius: 30px;
 }
+.span-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.jet-link {
+  background-color: #29235c;
+  opacity: 75%;
+}
+.vodafone-link {
+  background-color: #8f1417;
+  opacity: 75%;
+}
 .dropdown-content img {
   width: 100%;
+  margin-bottom: 10px;
 }
 .dropdown-input:checked + .dropdown-label + .dropdown-content {
   display: block;
@@ -161,6 +184,7 @@ header a {
   left: 10px;
   fill: #ef00ff;
 }
+
 /*  --------------------------  для планшета  -------------------  */
 
 @media screen and (min-width: 900px) {
