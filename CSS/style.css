@@ -16,7 +16,8 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  background-color: #e7ecf2;
+  /* background-color: #e7ecf2; */
+  background-color: #f1f1f1;
 }
 button {
   cursor: pointer;
@@ -34,15 +35,16 @@ button {
   width: 342px;
   height: 194px;
   border-radius: 25px;
-  box-shadow: 2px 2px 8px 0px rgba(67, 64, 64, 0.3);
+  box-shadow: 2px 2px 8px 0px rgba(67, 64, 64, 0.3),
+    inset 0px 1px 0px 0 rgba(255, 255, 255, 0.4),
+    inset 0px -1px 0px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(67, 64, 64, 1);
 }
 .bage-page-btm {
   background: linear-gradient(120deg, #1b457a 0%, #171616 100%);
-  border: 1px solid rgba(67, 64, 64, 1);
 }
 .qr-code-page-btm {
   background: linear-gradient(120deg, #6d1b7a 0%, #171616 100%);
-  border: 1px solid rgba(67, 64, 64, 1);
 }
 .start-container h1 {
   margin: 0;
