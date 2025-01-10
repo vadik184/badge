@@ -53,6 +53,8 @@ button {
   font-weight: bold;
   padding-left: 32px;
   padding-top: 16px;
+  z-index: 999;
+  position: relative;
 }
 .start-container p {
   margin: 0;
@@ -88,6 +90,7 @@ button {
 
 .next-page {
   text-decoration: none;
+  overflow: hidden;
 }
 
 .section {
@@ -277,6 +280,16 @@ button {
   background-color: #a0c7e4;
   box-shadow: none;
   color: #2c5777;
+}
+.qr-code-container {
+  position: relative;
+}
+.section-img {
+  position: absolute;
+  width: 100px;
+  right: 15px;
+  bottom: -65px;
+  /* opacity: 50%; */
 }
 /* -------------------- формат для ПК --------------------*/
 @media screen and (min-width: 1158px) {
