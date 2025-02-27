@@ -1,0 +1,111 @@
+:root {
+  --main-backgraund: #dfe5ed;
+  --main-backgraund2: #f0f0f3;
+  --border: #70707025;
+  --green-main: #96d552;
+  --background-input: #f1f5f8;
+  --background-input-focus: #77b0fc;
+  --border-inpyt-focus: #dfeeff;
+  --button: #1a72e4;
+  --button2: #569fff;
+  --button-border: #68aeff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  background-color: rgb(245, 245, 247);
+  color: #121212;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 37px;
+  background-color: rgba(53, 53, 53, 0.35);
+}
+
+header a {
+  cursor: pointer;
+  height: 100%;
+  text-decoration: none;
+  padding: 0;
+  color: white;
+  display: flex;
+  margin-left: 63px;
+  align-items: center;
+}
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.choise-zone {
+}
+
+.gender-form {
+  max-width: 308px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid rgb(210, 210, 215);
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #e2e4e3;
+}
+.gender-fielset {
+}
+label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.gender-lable {
+}
+.form-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #717171;
+  background-color: #0ca21d;
+  color: #f1f5f8;
+}
+.name-lable {
+}
+input[name="name"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #74907f;
+  border-radius: 5px;
+}
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #74907d;
+  border-radius: 5px;
+}

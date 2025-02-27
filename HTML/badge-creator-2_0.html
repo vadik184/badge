@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../CSS/badge-creator-2_0.css" />
+    <title>Бейджі</title>
+  </head>
+  <body>
+    <div class="osnova">
+      <header>
+        <a href="../index.html">НА ГОЛОВНУ</a>
+      </header>
+      <section class="main-section">
+        <div class="choise-zone">
+          <form class="gender-form" action="" method="get">
+            <fieldset class="gender-fielset">
+              <label for="male" class="gender-lable">
+                ХЛОПЕЦЬ
+                <input type="checkbox" name="male" id="male" />
+              </label>
+              <label for="female" class="gender-lable">
+                ДІВЧИНА
+                <input type="checkbox" name="female" id="female" />
+              </label>
+            </fieldset>
+            <fieldset class="name-fielset">
+              <label class="name-lable" for="name">
+                ВВЕДИ ІМ'Я
+                <input type="text" name="name" id="name" />
+              </label>
+            </fieldset>
+            <fieldset class="position-field">
+              <label for="position" class="position-lable">
+                ВИБЕРИ ПОСАДУ
+                <select name="position" id="position">
+                  <option value="" disabled selected class="placeholder">
+                    (вибрати)
+                  </option>
+                  <option value="директор магазину">директор магазину</option>
+                  <option value="товарознавець">товарознавець</option>
+                  <option value="касир">касир</option>
+                  <option value="експерт">експерт</option>
+                  <option value="стажер">стажер</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset class="image-fieldset">
+              <div class="container">
+                <label class="image-label" for="image-input-id"
+                  >ДОДАТИ ВЛАСНЕ ЗОБРАЖЕННЯ</label
+                >
+                <input
+                  class="image-input"
+                  type="file"
+                  id="image-input-id"
+                  accept="image/*"
+                />
+                <div class="photo-preview">
+                  <div class="upload-photo"></div>
+                </div>
+                <button class="upload-image-button">завантажити</button>
+              </div>
+            </fieldset>
+            <input type="button" class="form-button" value="сформувати" />
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="../js/index.js"></script>
+    <!-- <script src="../js/badge-new.js"></script> -->
+    <script src=""></script>
+  </body>
+</html>
