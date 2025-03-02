@@ -215,6 +215,7 @@ select {
   background-clip: padding-box, border-box;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .form-button:hover {
