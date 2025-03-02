@@ -209,7 +209,7 @@ select {
   font-size: 1rem;
   font-weight: 600;
   padding: 20px 44px;
-  background: radial-gradient(#010520, #571181);
+  background: linear-gradient(45deg, #881bc2, #2b066f);
   border: 2px solid transparent;
   border-radius: 8px;
   background-clip: padding-box, border-box;
