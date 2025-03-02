@@ -16,25 +16,55 @@
         <div class="choise-zone">
           <form class="gender-form" action="" method="get">
             <fieldset class="gender-fielset">
-              <label for="male" class="gender-lable">
-                ХЛОПЕЦЬ
-                <input type="checkbox" name="male" id="male" />
-              </label>
-              <label for="female" class="gender-lable">
-                ДІВЧИНА
-                <input type="checkbox" name="female" id="female" />
-              </label>
+              <!-- <div class="radio-container"> -->
+              <label class="gender-label gender-male" for="male">
+                <input
+                  class="gender-radio"
+                  type="radio"
+                  name="gender-choise"
+                  id="male"
+                  value="male"
+                />
+                <span class="gender-selection-span">
+                  <img
+                    class="avatar-preview male"
+                    src="../img/male-avatar.png"
+                    alt="male-icon"
+                /></span>
+                <p>хлопець</p></label
+              >
+              <label class="gender-label gender-female" for="female">
+                <input
+                  class="gender-radio"
+                  type="radio"
+                  name="gender-choise"
+                  id="female"
+                  value="female"
+                />
+                <span class="gender-selection-span">
+                  <img
+                    class="avatar-preview female"
+                    src="../img/female-avatar.png"
+                    alt="female-icon"
+                /></span>
+                <p>дівчина</p></label
+              >
+              <!-- </div> -->
             </fieldset>
             <fieldset class="name-fielset">
-              <label class="name-lable" for="name">
+              <label class="name-lable label" for="name">
                 ВВЕДИ ІМ'Я
-                <input type="text" name="name" id="name" />
+                <input class="input" type="text" name="name" id="name" />
               </label>
             </fieldset>
             <fieldset class="position-field">
-              <label for="position" class="position-lable">
+              <label
+                class="selection-label label"
+                for="position"
+                class="position-lable"
+              >
                 ВИБЕРИ ПОСАДУ
-                <select name="position" id="position">
+                <select class="input" name="position" id="position">
                   <option value="" disabled selected class="placeholder">
                     (вибрати)
                   </option>
@@ -49,7 +79,7 @@
             <fieldset class="image-fieldset">
               <div class="container">
                 <label class="image-label" for="image-input-id"
-                  >ДОДАТИ ВЛАСНЕ ЗОБРАЖЕННЯ</label
+                  >додати власне зображення</label
                 >
                 <input
                   class="image-input"
@@ -63,7 +93,7 @@
                 <button class="upload-image-button">завантажити</button>
               </div>
             </fieldset>
-            <input type="button" class="form-button" value="сформувати" />
+            <input type="button" class="form-button" value="СФОРМУВАТИ" />
           </form>
         </div>
       </section>
